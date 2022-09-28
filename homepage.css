@@ -7,8 +7,8 @@
 }
 
 .bg{
-    height: 610px;
-    background-color: #0ca348;
+    height: 640px;
+    background-color: #0d9f46;
     border-bottom-left-radius: 100rem 5rem;
     border-bottom-right-radius: 100rem 5rem;
 }
@@ -86,7 +86,7 @@ a{
 } 
 .signin > button {
     border: 3px solid #0bb850;
-    background-color: #0ca348;
+    background-color: #0d9f46;
     color: white;
 }  
 
@@ -94,18 +94,26 @@ a{
 /* ------------------------------------------------------------ */
 
 .section-start{
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: auto;
-    width: 90%;
+    width: 100%;
+    height: auto;
+}
+
+.berry-text-store{
+    /* border: 1px solid blue; */
+    height: auto;
+    width: 38%;
+    margin: 2px;
 }
 
 .berry{
     width: 60px;
     height: 55px;
-    /* position: absolute; */
     padding-top: 9%;
-    margin-left: -8%;
+    margin-left: 7%;
 }
 
 h1{
@@ -115,10 +123,11 @@ h1{
     color: #FFFFFF;
     font-size: 72px;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 10px 15px ;
+    margin: 10px 90px ;
     line-height: 1;
     display: block;
 }
+
 p{
     /* border: 1px solid; */
     height: 50px;
@@ -126,52 +135,129 @@ p{
     color: #fcf8b3;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 22px;
-    margin: 10px 15px;
+    margin: 10px 90px;
 }
 
 
 .store{
     /* border: 1px solid red; */
     display: flex;
-    width: 90%;
-    margin: 60px 20px;
+    width: 80%;
+    margin: 62px 90px;
     justify-content: space-between;
 }
 .store a > img{
-    width:90%;
+    width:85%;
     height: auto;
 }
 
+.rating{
+    /* border: 1px solid red ; */
+    width: 80%;
+    height: auto;
+    color: #46618a;
+    font-size: 22px;
+    font-weight: 400;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 40px;
+}
+
+.rating-device, .rating-device > div{
+    /* border: 1px solid ; */
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+
+ .rating-device div{
+    margin: 20px 0px;
+}
+
 .iphone-watch{
+    /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
-    border: 1px solid;
-    height: 600px;
     width: 100%;
-    margin: auto;
-    /* margin-left: -10px; */
+    height: auto;
+    margin: 2px;
 }
 
-.phone{
-    width: 30%;
+.phone, .watch, .plate{
+    /* border: 1px solid yellow; */
+    margin: 2px;
+    width: 100%;
 }
 .phone > img{
-    height: 650px;
-    margin-left: -50px;
+    height: 680px;
+    width: 430px;
+    margin-left: -75px;
+    padding-top: 45px;
 }
+
 .watch {
-    display: flex;
     align-self: flex-end;
-    /* padding-top: 100%; */
-    height: 350px;
+    width: 5%;
 }
-.plate > img{
+
+.watch > img{
+    width: 260px; 
+    margin-left: -100px;
+    padding-bottom: 50px;
+}
+
+.plate{
     width: 100%;
+}
 
+.plate > img{
+  width: 100%;
 }
 
 
+/* ------------------------------------------- */
 
+.section-quote{
+    /* border: 1px solid red; */
+    width: 99%;
+    margin: auto;
+    margin-top: 250px;
+}
+.section-quote > div > p{
+    height: auto;
+    margin: auto;
+    /* border: 1px solid ; */
+    text-align: center;
+    line-height: 50px;
+    color: #46618a;
+    font-size: 30px;
+    font-weight: 500;
+    font-weight: bolder;
+    font-family:  Helvetica, Arial, sans-serif;
+}
 
+#women{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#women-health {
+    /* border: 1px solid; */
+    height: 55px;
+    width: 80%;
+    margin: 30px;
+}
 
-
+.logos{
+    /* border: 1px solid; */
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.logos > img{
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 45px;
+}
