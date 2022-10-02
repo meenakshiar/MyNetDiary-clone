@@ -448,7 +448,7 @@
 
 .section-toprated>div {
     /* border: 1px solid; */
-    width: 99.8%;
+    width: 100%;
     height: auto;
     display: grid;
     justify-content: center;
@@ -488,7 +488,7 @@
 
 .section-witcard {
     /* border: 1px solid red; */
-    width: 99.8%;
+    width: 100%;
     display: flex;
 }
 
@@ -537,78 +537,113 @@
 /* ---------------------------------------------------- */
 
 .slider{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     background-color: #0d9f46;
     border-bottom-left-radius: 100rem 5rem;
     border-bottom-right-radius: 100rem 5rem;
     /* margin-top: 90px; */
-    height: 650px;
-}
-
-.slider{
-    width: 99.8%;
+    height: 550px;
+    /* width: 500px; */
 }
 
 .slides-container{
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-.slide-image {
-    height: 100%;
+    border: 1px solid red ;
+    background-color: yellow;
+    width: 600px;
+    height: 400px;
     position: absolute;
+    /* overflow: visible; */
+    transform: translate(-50%, 50%);
+    
+}
+.slide-image{
+    width: 200px;
+    height: 100%;
+    position: relative;
+    /* overflow: hidden; */
 }
 
 .slide-image img{
+    position: relative;
     width: 100%;
-    height: 82%;
-    padding-top: 28.2%;
-    padding-left: 16%;
-    object-fit: cover;
+    height: 80%;
+    /* padding-top: 9.01%;
+    padding-left: 5%; */
+    /* object-fit: cover; */
+   
+    /* display: inline-block; */
+    display: none;
 }
 
-.next-btn,
-.prev-btn{
+/* img{
+    position: relative;
+
+} */
+
+#next,
+#prev{
     padding: 25px;
     position: absolute;
-    /* top: 50%; */
-    margin: 20px;
-    transform: translateY(350%);
+    margin: 25px;
+    /* transform: translateY(300%); */
     border: 2px solid rgba(5, 96, 0, .5);
     border-radius: 50%;
     z-index: 100;
     cursor: pointer;
+    background: transparent;
     /* transition: 400ms; */
 }
 
-.next-btn:hover,
-.prev-btn:hover{
+#prev:hover,
+#next:hover{
     background-color: white;
 }
-.prev-btn{
+#prev{
     left: 0;
 }
-.next-btn{
+#next{
     right: 0;
 }
 
+.active1{
+    display: block;
+ }
+
 .nav-dots{
-    /* border: 1px solid; */
+    border: 1px solid;
     display: flex;
-    height: auto;
+    height: 100px;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    margin: 16px 0px;
+    justify-content: space-between;
+    /* margin: 20px auto 0 auto; */
+    /* margin: 16px 0px; */
     /* background-color: #0bab4b; */
 }
-.single-dot{
+.nav-dots > button{
+    /* outline: none; */
+    height: 20px;
+    width: 20px;
+    border: 2px solid rgba(5, 96, 0, .5);
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+    /* margin: 0px 10px; */
+    /* font-size: 10px; */
+ 
+ }
+
+ .nav-dots button:nth-child(1){
+    background-color: #fff;
+ }
+/* .single-dot{
     border: 2px solid rgba(5, 96, 0, .5);
     height: 12px;
     width: 12px;
     border-radius: 50%;
     margin: 0px 10px;
     cursor: pointer;
-}
+} */
 /* .single-dot.active{
     background: #eee;
 } */
@@ -616,7 +651,7 @@
 /* ----------------------------------- */
 .blogs{
     /* border: 1px solid blue; */
-    width: 99.8%;
+    width: 100%;
     height: auto;
     margin-top: 5.5%;
     display: grid;
@@ -686,7 +721,7 @@ hr{
 
 .compatible-logos {
     /* border: 1px solid; */
-    width: 99.8%;
+    width: 100%;
     height: auto;
     display: flex;
     margin: 0;
@@ -709,7 +744,7 @@ hr{
     /* margin-top: 8%; */
     border-bottom-left-radius: 100rem 5rem;
     border-bottom-right-radius: 100rem 5rem;
-    width: 99.8%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-wrap: column;
@@ -772,7 +807,7 @@ hr{
 
 .footer-bg{
     background: url(http://mynetdiary.com/images/texture-noise@1x.png);
-    width: 99.8%;
+    width: auto;
     height: auto;
 }
 
@@ -870,7 +905,7 @@ footer > div > ul{
     /* border: 1px solid blue; */
     background-color: rgb(143, 112, 102, .07);
     height: auto;
-    width: 99.8%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -894,7 +929,10 @@ footer > div > ul{
     color: #5b6067;
 }
 
-
+.copyright div p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 
 
