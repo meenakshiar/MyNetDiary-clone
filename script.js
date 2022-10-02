@@ -1,32 +1,35 @@
-
-var slideImage = document.querySelectorAll(".slide-image");
-var slideContainer = document.querySelectorAll(".slides-container");
-var nxtBtn = document.querySelectorAll(".next-btn");
-var prevBtn = document.querySelectorAll(".prev-btn");
-var navDots = document.querySelectorAll(".nav-dots");
-
-function move () {
-    slideImage.forEach((img, i) => {
-        img.style.left= i*100+"%";
-    });
-    slideImage[0].classList.add("active"); 
+let i=0;
+let j=6;
+function next(){
+   document.getElementById("content"+ (i+1)).classList.remove("active1")
+   i=(j+i+1)%j;
+   document.getElementById("content"+(i+1)).classList.add("active1") 
+   indicator(i+1);
 }
-move();
 
-// create nav dots 
-let numOfImages= slideImage.length;
-let slideWidth = slideImage[0].clientWidth;
+function prev(){
+   document.getElementById("content"+ (i+1)).classList.remove("active1")
+   i=(j+i-1)%j;
+   document.getElementById("content"+(i+1)).classList.add("active1") 
+   indicator(i+1);
+}
+let dots=document.querySelectorAll(".nav-dots button")
+//  console.log(dots)
 
-// function createNavDots (){
-//     for (i=0; i<numOfImages; i++){
-//        const dot = document.createElement("div");
-//        dot.classList.add("single-dot");
-//        navDots.appendChild(dot);
-//     }
-
-// }
-// createNavDots ();
-
-nxtBtn.addEventListener("click", () => {
-    slideContainer.style.transform = "translateX(-" + slideWidth + 100 + "px)";
-});
+function indicator(num){
+   dots.forEach(function(dot){
+       dot.style.backgroundColor="transparent";
+   });
+   let s=document.querySelector(".nav-dots button:nth-child(" +num+ ")")
+   s.style.backgroundColor="white";
+}
+let images=document.querySelectorAll(".slide-image img")
+console.log(images)
+function dot(index){
+   images.forEach(function(image){
+        image.classList.remove("active1");
+   });
+   document.getElementById("content"+ index).classList.add("active1");
+   i= index-1; 
+   indicator(index);
+}
